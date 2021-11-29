@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {%  load static %}
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>{%block title%}{% endblock %}</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'Dharanapp/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static 'Dharanapp/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="pink lighten-3" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="{% url 'pinicio'%}" class="brand-logo">Dharana SPA</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{% url 'preserva'%}">Reservar Cita</a></li>
+        <li><a href="{% url 'pservicio'%}">Servicios</a></li>
+        <li><a href="{% url 'pgestion'%}">Gestión</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="{% url 'preserva'%}">Reservar Cita</a></li>
+        <li><a href="{% url 'pservicio'%}">Servicios</a></li>
+        <li><a href="{% url 'pgestion'%}">Gestion</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  {%block content %}
+
+  {% endblock %}
+  <footer class="page-footer pink lighten-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Direcci&oacute;n </h5>
+          <ul>
+            <li><a class="white-text" href="#!">..</a></li>
+            <li><a class="white-text" href="#!">..</a></li>
+            <li><a class="white-text" href="#!">Riobamba</a></li>
+            <li><a class="white-text" href="#!">Ecuador</a></li>
+          </ul>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Contacto</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Instagram:</a></li>
+            <li><a class="white-text" href="#!">Facebook:</a></li>
+            <li><a class="white-text" href="#!">Whatsapp:</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="white-text text-lighten-3" href="http://materializecss.com" >bapd &reg;2021</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'Dharanapp/js/materialize.js' %}"></script>
+  <script src="{% static 'Dharanapp/js/init.js' %}"></script>
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+html, body {
+    background-color: #f8bbd0;
+    background-image: linear-gradient(-90deg,  #f8bbd0,#f06292);
+  }
+  .botui-container {
+    background-color: inherit;
+  }
+
+  .botui-messages-container {
+  }
+
+  .botui-actions-container {
+    padding: 0px 30px;
+  }
+
+  .botui-message {
+  }
+
+  .botui-message-content.text {
+    background-color: #e1fafc;
+    color: #404040;
+  }
+
+  .botui-message-content.human {
+    background-color: #f06292;
+    color: #e1fafc;
+  }
+
+  .botui-message-content.embed {
+  }
+
+  .botui-message-content-link {
+  }
+
+  .botui-actions-text-input {
+  }
+
+  .botui-actions-text-submit {
+  }
+
+  button.botui-actions-buttons-button {
+    margin-top: 0px;
+  }

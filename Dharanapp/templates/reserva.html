@@ -1,5 +1,9 @@
-{% extends 'tbase.html' %}
-{%block title %}Reserva tu cita{% endblock %}
-{% block content %}
-<h1 class="header center pink-text text-lighten-3">Chatea y Reserva tu cita</h1>
+{% extends 'tchatbot.html'%}
+{%block title %}Reserva Turno{% endblock %}
+{%block content%}
+<h2 class="header center white-text">Chatea y obtén tu cita enseguida</h2>
+<div class="botui-app-container" id="reserva-bot">
+    <bot-ui></bot-ui>
+</div>
 {% endblock %}
+

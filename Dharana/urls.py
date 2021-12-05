@@ -20,3 +20,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Dharanapp.urls'))
 ]
+admin.site.site_header="PANEL DE GESTIÓN DHARANA"

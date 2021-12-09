@@ -18,6 +18,7 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('Dharanapp.urls'))
+    path('',include('Dharanapp.urls')),
+    #path('',include('DharanAPI.urls')),
 ]
 admin.site.site_header="PANEL DE GESTIÓN DHARANA"

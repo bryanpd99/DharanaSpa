@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'colorfield',
+    'admin_interface',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Dharanapp',
+    "DharanAPI",
 ]
 
 MIDDLEWARE = [
@@ -81,7 +84,7 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'playground',
+        'NAME': 'Dharana',
 
         'USER': 'postgres',
 
@@ -129,7 +132,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-
+X_FRAME_OPTIONS='SAMEORIGIN' # only if django version >= 3.0
 STATIC_URL = '/static/'
 
 # Default primary key field type
@@ -138,6 +141,8 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #CAMBIAR TITLE
 #DIRECTORIO ARCHIVOS MULTIMEDIA
+
 STATICFILES_DIRS =(
     os.path.join(BASE_DIR,'static'),
 )
+#STATIC_ROOT = "/Dharana/Dharanapp/"

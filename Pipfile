@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 django = "==3.2.9"
 psycopg2 = "*"
+pillow = "*"
+django-admin-interface = "*"
 
 [dev-packages]
 

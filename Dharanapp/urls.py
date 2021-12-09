@@ -6,5 +6,5 @@ urlpatterns=[
     path('inicio/',views.vindex, name='pinicio'),
     path('reserva/',views.vreserva, name='preserva'),
     path('servicio/',views.vservicio, name='pservicio'),
-    path('gestion/',views.vgestion, name='pgestion')
+    #path('gestion/',views.vgestion, name='pgestion')
 ]

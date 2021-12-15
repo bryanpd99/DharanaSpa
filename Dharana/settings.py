@@ -84,7 +84,7 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'Dharana',
+        'NAME': 'P3',
 
         'USER': 'postgres',
 
@@ -144,5 +144,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS =(
     os.path.join(BASE_DIR,'static'),
+    'Dharanapp/static/',
 )
-#STATIC_ROOT = "/Dharana/Dharanapp/"
+STATIC_ROOT = "/Dharanapp/static/"
+#PARA EL GESTOR DE USUARIOS ESPECIALISTA
+AUTH_USER_MODEL = 'DharanAPI.Especialista'

@@ -21,6 +21,7 @@
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
+        <li><a href="{% url 'pinicio'%}">Inicio</a></li>
         <li><a href="{% url 'preserva'%}">Reservar Cita</a></li>
         <li><a href="{% url 'pservicio'%}">Servicios</a></li>
         <li><a href="/admin">Gestion</a></li>
@@ -29,24 +30,23 @@
     </div>
   </nav>
   {%block content %}
-
   {% endblock %}
   <footer class="page-footer pink lighten-3">
     <div class="container">
-      <div class="row">
+      <div class="row ">
         <div class="col l6 s12">
-          <h5 class="white-text">Direcci&oacute;n </h5>
+          <h5 class="white-text"><i class="material-icons">map</i>Direcci&oacute;n </h5>
           <ul>
-            <li><a class="white-text" href="#!">..</a></li>
-            <li><a class="white-text" href="#!">..</a></li>
-            <li><a class="white-text" href="#!">Riobamba</a></li>
-            <li><a class="white-text" href="#!">Ecuador</a></li>
+            <li><a class="white-text" href="https://www.google.com.ec/maps/place/DHARANA+SPA/@-1.6794934,-78.6474159,19z/data=!4m5!3m4!1s0x91d3a9e39791c027:0xbe75d86be5719518!8m2!3d-1.6793966!4d-78.646915?hl=es">Chile 14-20 y Loja</a></li>
+            <li>Ciudadela la Paz</li>
+            <li>Riobamba</li>
+            <li>Ecuador</li>
           </ul>
 
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Contacto</h5>
+          <h5 class="white-text"><i class="material-icons">contacts</i>Contacto</h5>
           <ul>
             <li><a class="white-text" href="#!">Instagram:</a></li>
             <li><a class="white-text" href="#!">Facebook:</a></li>

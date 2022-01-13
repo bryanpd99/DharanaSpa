@@ -5,13 +5,14 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>{%block title%}{% endblock %}</title>
-
   <!-- CSS  -->
+  {% block header %}
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="{% static 'Dharanapp/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="{% static 'Dharanapp/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  {% endblock header %}
 </head>
-<body>
+<body style="background-color: #FDE1EA;">
   <nav class="pink lighten-3" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="{% url 'pinicio'%}" class="brand-logo">Dharana SPA</a>
       <ul class="right hide-on-med-and-down">
@@ -62,11 +63,11 @@
     </div>
   </footer>
 
-
+{%block footer_scripts %}
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="{% static 'Dharanapp/js/materialize.js' %}"></script>
   <script src="{% static 'Dharanapp/js/init.js' %}"></script>
-
+  {%endblock footer_scripts %}
   </body>
 </html>

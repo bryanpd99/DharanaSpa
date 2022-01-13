@@ -12,3 +12,13 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+.carousel .carousel-item{
+  width: 500px;
+  height: 500px;
+}
+.carousel{
+  min-height: 500px;
+}
+#sms{
+  background-color: violet;
+}

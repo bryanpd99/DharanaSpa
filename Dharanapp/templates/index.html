@@ -6,25 +6,58 @@
   <div class="container">
     <br /><br />
     <h1 class="header center pink-text text-lighten-3">Bienvenido a Dharana </h1>
-    
     <div class="row center">
-      <img src="{% static 'Dharanapp/img/spam.jpg'%}" width="450px" alt="">
       <h5 class="header col s12 light" style="font-style: italic ;">
         Armon&iacute;a y belleza integral
       </h5>
-    </div>
-    <div class="row center">
       <br>
-      <h5 class="light" >Por qu&eacute; confiar en Dharana?</h3>
+      <div class="container section col s12 m6">
+        <h5 class="center" >Nuestra oferta</h3>
+        <div class="carousel carousel-slider" id="autop" >
+          <a class="carousel-item" > <img src="{% static 'Dharanapp/img/of1.jpg'%}" ></a>
+          <a class="carousel-item" ><img src="{% static 'Dharanapp/img/of2.jpg'%}"></a>
+          <a class="carousel-item" ><img src="{% static 'Dharanapp/img/of3.jpg'%}"></a>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <h5 class="center"  >Somos especialistas en </h3>
+        <div class="center col s12 m6">
+          <ul>
+            <li>Limpiezas faciales</li>
+            <li>Limpiezas faciales</li>
+          </ul>
+        </div>
+        <div class="center col s12 m6">
+          <ul>
+            <li>Limpiezas faciales</li>
+
+          </ul>
+        </div>
+        
+      </div>
+    
+    </div>
+    <div class="row center" >
+      <h5 class="center" >Qui&eacute;nes somos?</h3>
+        <br>
+        <div class="center col s12 m6"  >
+          <img  width="300px" src="{% static 'Dharanapp/img/portadaDS1.jpg'%}" alt="Inicio" style="border-radius: 25px;">
+        </div>
+        <div class="center col s12 m6" >
+          <h5 class="light" >"Dharana es un centro estético y de terapias alternativas que ofrece tratamientos faciales y corporales utilizando aparatología y productos de alta gama para garantizar óptimos resultados."</h5>
+        </div>
+      
+      
     </div>
     <br /><br />
   </div>
 </div>
 
-<div class="containerc">
+<div class="container">
   <div class="section">
     <!--   Icon Section   -->
     <div class="row center">
+      <h5 class="light" >¿Por qu&eacute; confiar en Dharana?</h3>
       <div class="col s12 m4">
         <div class="icon-block">
           <h2 class="center pink-text text-lighten-3">
@@ -33,12 +66,11 @@
           <h5 class="center">Equipos de primera</h5>
 
           <p class="light">
-            Tenemos equipos de ultrasonido y l&aacute;ser certificados para su seguridad
+            Hacemos uso de tecnología de punta con  equipos certificados y seguros de ultrasonido, láser y luz ultravioleta para garantizar máximos resultados
           </p>
         </div>
       </div>
-
-      <div class="col s12 m4">
+      <div class="col s12 m4 "  >
         <div class="icon-block">
           <h2 class="center pink-text text-lighten-3">
             <i class="material-icons">thumb_up</i>
@@ -46,7 +78,7 @@
           <h5 class="center">Profesional Calificado</h5>
 
           <p class="light">
-            Profesionales capacitados y en constante estudio 
+            Tenemos gente profesional capacitada motivados por brindar los mejores servicios de terapias a la ciudadanía , con toda la seguridad del mundo
           </p>
         </div>
       </div>
@@ -59,7 +91,7 @@
           <h5 class="center">Precios accesibles</h5>
 
           <p class="light">
-            Tratamientos desde los 10 $ y descuentos increíbles para 2 o más personas
+            Contamos con tratamientos de calidad y calidez con m&oacute;dicos precios   y descuentos increíbles para nuestra fiel  clientela. <br> Además realizamos descuentos en los tratamientos  para grupos de 2 o más personas
           </p>
         </div>
       </div>
@@ -68,3 +100,22 @@
   <br /><br />
 </div>
 {%endblock %}
+{% block footer_scripts %}
+    {{ block.super }}
+    <script>
+        $(document).ready(function(){
+    $('#autop').carousel({
+      dist:-100,
+      shift:50,
+      indicators:true,
+      fullWidth: true,
+      duration:400,
+    });
+    setInterval(function() {
+    $('#autop').carousel('next');
+}, 7000);
+  });
+    </script>
+{% endblock %}
+
+
